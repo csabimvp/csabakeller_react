@@ -1,0 +1,10 @@
+******************* React Router ************************
+npm i react-router-dom
+
+
+******************* React Lottie/BodyMovin ************************
+npm install lottie-web
+
+
+******************* React TypeWriter Effect ************************
+npm install typewriter-effect

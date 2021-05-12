@@ -1,38 +1,352 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: 'Itim', cursive;
+  color: #222;
+}
+
+/*======================================
+//--//-->   NAVIGATION
+======================================*/
+
+.nav {
+  font-size: large;
+}
+
+.nav-link {
+  color: #3244a0;
+}
+
+.active {
+  color: #0b224d;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.nav-link:hover,
+.active:hover {
+  color: #0b224d;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/*======================================
+//--//-->   Intro section
+======================================*/
+
+.animation-avatar {
+  justify-content: center;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+
+.intro {
+  margin-top: 10%;
+  padding: 15px;
+  text-shadow: 1px 1px 1px rgba(15, 15, 15, 0.6);
+  text-align: left;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+}
+
+.Typewriter{
+  font-size: 2.5rem;
+}
+
+.socials a {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.projects {
+  width: 50%;
+  margin: auto;
+}
+
+/*======================================
+//--//-->   Divider
+======================================*/
+
+.divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.animation-projects {
+  justify-content: center;
+  margin: auto;
+  width: 720px;
+  height: 270px;
+}
+
+/*======================================
+//--//-->   Budget Tracker section
+======================================*/
+
+.animation-budget {
+  justify-content: center;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+
+.budget-tracker-app h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.budget-list {
+  background-color: transparent;
+  border: none;
+  margin: 10px 10px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backend-list {
+  width: 70%;
+  margin: auto;
+  /*---background-color: #ffd452;--*/
+  background-color: #FDC830;
+  font-size: larger;
+  text-align: center;
+  border: 2px solid rgba(15, 15, 15, 0.6);
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.6);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.frontend-list {
+  width: 50%;
+  margin: auto;
+  color: whitesmoke;
+  /*---background-color: #544a7d;--*/
+  background-color: #5614B0;
+  font-size: larger;
+  text-align: center;
+  border: 2px solid rgba(15, 15, 15, 0.6);
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.6);
+}
+
+.django-green {
+  color: #092e20;
+}
+
+.django-red {
+  color: #d14f4f;
+}
+
+.react-blue {
+  color: #00d8ff;
+}
+
+/*======================================
+//--//-->   NASA APOD APP page
+======================================*/
+
+.nasa-photo {
+  text-align: center;
+}
+
+.nasa-photo img {
+  max-height: 80vh;
+  border-radius: 5%;
+}
+
+.nasa-text {
+  padding: 10px 10px;
+  text-align: justify;
+}
+
+.nasa-text h1 {
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+}
+
+.nasa-divider {
+  width: 50%;
+  margin: 10px auto 10px auto;
+}
+
+/*======================================
+//--//-->   Weather APP page
+======================================*/
+
+.search-box {
+  width: 50%;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.animation-weather {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  width: 500px;
+  height: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+.temp {
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.weather {
+  width: 50%;
+}
+
+.warm {
+  color: #FBAB7E;
+}
+
+.cold {
+  color: #0093E9;
+}
+
+/*======================================
+//--//-->   Animations page
+======================================*/
+
+.animation {
+  justify-content: center;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+}
+
+.animation-wrapper {
+  border-radius: 5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 5px 10px 5px 10px;
+  padding: 10px 10px;
+}
+
+.animation-wrapper h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/*======================================
+//--//-->   Footer section
+======================================*/
+
+footer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.line {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.social a {
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-github {
+  color: #222;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.fa-linkedin {
+  color: #3b5998;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+  color:#222222;
+}
+
+.fa-github:hover {
+  color: #126188;
+}
+
+/*======================================
+//--//-->   For BIG screens
+======================================*/
+
+@media(min-width: 1200px) {
+  .nav {
+    font-size: large;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media(max-width: 1200px) {
+  .nasa-photo img {
+    width: 600px;
+    height: 600px;
+    border-radius: 5%;
+  }
+}
+/*======================================
+//--//-->   For small screens
+======================================*/
+
+@media(max-width: 990px) {
+  body {
+    font-size: small;
+  }
+
+  .nav {
+    font-size: .75rem;
+    text-align: center;
+  }
+
+  .Typewriter {
+    font-size: 1.5rem;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .animations {
+    width: 300px;
+    height: 300px;
+  }
+
+  .animation-weather {
+    width: 250px;
+    height: 250px;
+  }
+
+  .nasa-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+  }
+
+  .search-box {
+    width: 100%;
+    margin: 0px auto 0px auto;
+  }
+
+  .weather {
+    margin: auto;
+    text-align: center;
+  }
+
+  .weather-wrapper {
+    padding-top: 0px;
+    text-align: center;
   }
 }
