@@ -1,5 +1,5 @@
 // Importing animations
-import { Clear, Cloudy, Drizzle, Rain, Thunderstorm } from './AnimationStore';
+import { Clear, Cloudy, Drizzle, Rain, Thunderstorm, Snow } from './AnimationStore';
 
 export default function WeatherAnimation({ weather }) {
     switch (weather) {
@@ -10,7 +10,7 @@ export default function WeatherAnimation({ weather }) {
             return <Clear />
         }
         case 'Snow': {
-            return <p className='no-animation'>I don't have an animation for <span><strong>{weather}</strong></span> yet I'm afraid...</p>
+            return <Snow />
         }
         case 'Rain': {
             return <Rain />

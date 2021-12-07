@@ -10,6 +10,7 @@ import CloudyAnimation from '../animations/Cloudy.json';
 import DrizzleAnimation from '../animations/Drizzle.json';
 import RainAnimation from '../animations/Rain.json';
 import ThunderstormAnimation from '../animations/Thunderstorm.json';
+import SnowAnimation from '../animations/Snow.json';
 
 export function Clear() {
 
@@ -81,6 +82,22 @@ export function Thunderstorm() {
         lottie.loadAnimation({
             container: document.querySelector("#weather-animation"),
             animationData: ThunderstormAnimation,
+        })
+    }, [])
+
+    return (
+        <>
+            <div className='animation-weather animations' id='weather-animation'></div>
+        </>
+    )
+}
+
+export function Snow() {
+
+    useEffect(() => {
+        lottie.loadAnimation({
+            container: document.querySelector("#weather-animation"),
+            animationData: SnowAnimation,
         })
     }, [])
 
