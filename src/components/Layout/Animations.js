@@ -16,6 +16,7 @@ import Clear from '../animations/Clear.json';
 import Cloudy from '../animations/Cloudy.json';
 import Drizzle from '../animations/Drizzle.json';
 import Rain from '../animations/Rain.json';
+import Snow from '../animations/Snow.json';
 
 export default function Animations() {
 
@@ -30,6 +31,7 @@ export default function Animations() {
     let RainContainer = createRef()
     let GalaxyContainer = createRef()
     let WriteOnContainer = createRef()
+    let SnowContainer = createRef()
 
     useEffect(() => {
         lottie.loadAnimation({
@@ -75,6 +77,10 @@ export default function Animations() {
         lottie.loadAnimation({
             container: RainContainer.current,
             animationData: Rain,
+        })
+        lottie.loadAnimation({
+            container: SnowContainer.current,
+            animationData: Snow,
         })
     })
 
@@ -124,6 +130,12 @@ export default function Animations() {
                     <div className='animation animations' ref={ThunderstormContainer}></div>
                     <h1 className='text-center mt-4 pt-2'>
                         Thunderstorm Animation
+                    </h1>
+                </div>
+                <div className='col pt-5 mb-4 animation-wrapper'>
+                    <div className='animation animations' ref={SnowContainer}></div>
+                    <h1 className='text-center mt-4 pt-2'>
+                        Snow Animation
                     </h1>
                 </div>
                 <div className='col pt-5 mb-4 animation-wrapper'>
