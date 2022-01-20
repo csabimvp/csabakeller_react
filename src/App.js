@@ -12,8 +12,8 @@ import {
 // Import components
 import Home from './components/Layout/Home';
 import NasaApod from './components/Apps/NasaApod';
-import WeatherApp from './components/Apps/WeatherApp';
-import Animations from './components/Layout/Animations';
+// import WeatherApp from './components/Apps/WeatherApp';
+// import Animations from './components/Layout/Animations';
 import Footer from './components/Layout/Footer';
 
 // Import CSS
@@ -31,23 +31,11 @@ function App() {
           <li className='nav-item'>
             <NavLink className='nav-link' activeClassName='nav-link-active' to='/nasa'>NASA - APOD</NavLink>
           </li>
-          <li className='nav-item'>
-            <NavLink className='nav-link' activeClassName='nav-link-active' to='/weather'>Weather App</NavLink>
-          </li>
-          <li className='nav-item'>
-            <NavLink className='nav-link' activeClassName='nav-link-active' to='/animations'>Animations</NavLink>
-          </li>
         </ul>
 
         <Switch>
           <Route path='/nasa'>
             <NasaApod />
-          </Route>
-          <Route path='/weather'>
-            <WeatherApp />
-          </Route>
-          <Route path='/animations'>
-            <Animations />
           </Route>
           <Route path='/'>
             <Home />

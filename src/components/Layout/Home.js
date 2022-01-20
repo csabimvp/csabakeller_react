@@ -7,25 +7,23 @@ import Typewriter from 'typewriter-effect';
 
 // Importing animation
 import Avatar from '../animations/Avatar.json';
-import WriteOn from '../animations/WriteOn.json';
+// import WriteOn from '../animations/WriteOn.json';
 
 // Import components
 import Budget from '../Apps/Budget';
 import Todo from '../Apps/Todo';
 import Nasa from '../Apps/Nasa';
+import NbaScraper from '../Apps/NbaScraper';
+import WeatherApp from '../Apps/WeatherApp';
 
 export default function Home() {
     let avatarContainer = createRef()
-    let writeOnContainer = createRef()
+    // let writeOnContainer = createRef()
 
     useEffect(() => {
         lottie.loadAnimation({
             container: avatarContainer.current,
             animationData: Avatar,
-        })
-        lottie.loadAnimation({
-            container: writeOnContainer.current,
-            animationData: WriteOn,
         })
     })
 
@@ -42,7 +40,7 @@ export default function Home() {
                         <h1 className="display-5 fw-bold">I am Csaba Keller</h1>
                         <Typewriter
                             options={{
-                                strings: ["Senior Data Analyst @ BP Plc", "Self-Taught Programmer", "Power BI Expert"],
+                                strings: ["Senior Data Analyst @ BP Plc", "Full Stack Developer", "Lottie Animator"],
                                 autoStart: true,
                                 loop: true,
                                 deleteSpeed: 25,
@@ -63,11 +61,15 @@ export default function Home() {
 
             <div className="divider mb-4 text-center"></div>
 
-            <div className='animation-projects animations' ref={writeOnContainer}>
-
+            <div className='projects'>
+                <h1>My Projects:</h1>
             </div>
 
             <div className='container'>
+                <NbaScraper />
+                <hr />
+                <WeatherApp />
+                <hr />
                 <Budget />
                 <hr />
                 <Todo />

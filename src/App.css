@@ -88,6 +88,19 @@ body {
   height: 270px;
 }
 
+.projects {
+  margin: auto;
+  padding: 10px 1px;
+  text-align: center;
+}
+
+.projects h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px rgba(15, 15, 15, 0.6);
+}
+
 /*======================================
 //--//-->   Budget Tracker section
 ======================================*/
@@ -179,36 +192,47 @@ body {
 }
 
 /*======================================
-//--//-->   Weather APP page
+//--//-->   Weather APP
 ======================================*/
-
-.search-box {
-  width: 50%;
-  margin: auto;
-  padding: 10px 10px;
-}
 
 .animation-weather {
   justify-content: center;
   margin: auto;
-  width: 500px;
-  height: 500px;
+  border-radius: 10px;
 }
 
-.temp {
-  font-size: 2rem;
+.checkitout {
+  padding: 10px 100px;
+  height: 100px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid #222;
+  background-color: #2F3C7E;
+  box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.6);
+  color: #FBEAEB;
+  font-size: medium;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.weather {
-  width: 50%;
+.checkitout:hover {
+  color: whitesmoke;
+  text-decoration: underline;
 }
 
-.warm {
-  color: #FBAB7E;
+/*======================================
+//--//-->   NBA Scraper App
+======================================*/
+
+.animation-scraper {
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.cold {
-  color: #0093E9;
+.beautifulsoup {
+  color: #4831D4;
 }
 
 /*======================================
